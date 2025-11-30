@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run local server",
+			"type": "shell",
+			"command": "firebase serve",
+			"args": [
+				"--only",
+				"hosting"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run local server",
+			"type": "shell",
+			"command": "firebase serve",
+			"args": [
+				"--only",
+				"hosting"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
