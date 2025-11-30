@@ -28,7 +28,7 @@
         </header>
 
         <main class="main-content form-page">
-            <form action="#" class="pet-form">
+            <form action="#" id="baia-form" class="pet-form">
 
                 <div class="form-group">
                     <label for="baia-photo-input">Foto da baia</label>
@@ -58,7 +58,12 @@
                     <input type="text" id="baia-age" placeholder="Filhotes, Adultos, Idosos...">
                 </div>
 
-                <button type="submit" class="btn-salvar">SALVAR</button>
+                <button type="submit" id="submit-button" class="btn-salvar">SALVAR</button>
+                
+                <button type="button" id="delete-baia" class="btn-excluir" style="display:none; margin-top: 10px;">
+                    EXCLUIR BAIA
+                </button>
+
             </form>
         </main>
     </div>
@@ -79,13 +84,14 @@
             </div>
         </nav>
     </div>
-     <!-- Firebase + Database -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="js/firebase-config.js"></script>
     <script src="js/auth.js"></script>
-    <script src="js/baias.js"></script>
+    
+    <script src="js/editar-baia.js"></script> 
+    
     <script src="js/menu.js"></script>
 </body>
 
